@@ -1,4 +1,4 @@
-# Project: Football Matches Object Detection
+# Object Detection for Football Matches
 
 ## Overview
 This project is aimed at developing an object detection system to identify and classify various objects in football matches, including players, goalkeepers, balls, and referees. The system will provide bounding boxes around each detected object and assign them the appropriate class name.
@@ -18,9 +18,9 @@ pip install onemetric
 pip install pytube --upgrade
 ```
 ## Dataset
- Used a publicly available dataset from Kaggle for training and testing the object detection model. You can download the dataset from the following Kaggle link:
+Used a publicly available dataset from Kaggle for training and testing the object detection model. You can download the dataset from the following Kaggle link:
 
-[Dataset on Kaggle](https://www.kaggle.com/datasets/nourhannabil/football-dataset-for-object-detection)
+[Download the dataset from Kaggle](https://www.kaggle.com/datasets/nourhannabil/football-dataset-for-object-detection)
 
 
 ## Dataset Split
@@ -46,7 +46,7 @@ The labels for the objects in the dataset were provided in YOLO format. Here are
 - Side referee
 - Staff members
 
-**Confusion Matrix - Initial Training**
+**Initial Training**
 ![tested image](/assets/original_dataset.jpg)
 ![Confusion Matrix](/assets/confusion_matrix_original_dataset.png)
 
@@ -61,7 +61,7 @@ To improve the results, the class labels were updated to represent all objects a
 - Side referee
 - Staff members
 
-**Confusion Matrix - Updated Training**
+**Updated Training**
 
 ![tested image](/assets/updated_dataset.jpg)
 ![Confusion Matrix](/assets/confusion_matrix_updated_dataset.png)
