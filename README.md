@@ -68,8 +68,18 @@ To improve the results, the class labels were updated to represent all objects a
 
 
 
-## Tested Videos
-Tested the object detection system on various football match videos, which are available on Google Drive. You can access the tested videos using the following link:
+## Video Inference using YOLO-NAS
+YOLO-NAS supports video inference by providing the input video path and output video path with the following line of code:
+
+```python
+# Define the paths
+INPUT_VIDEO_PATH = 'input_video.mp4'
+OUTPUT_VIDEO_PATH = 'output_video.mp4'
+
+# Perform inference on the input video
+model.predict(INPUT_VIDEO_PATH).save(OUTPUT_VIDEO_PATH)
+```
+Tested the object detection system on a football match video, which is available on Google Drive. You can access the tested video using the following link:
 
 [Tested Football Match Videos on Google Drive](https://drive.google.com/drive/folders/1NoufWl60SA1E8TmVQDTSqlcKrJTYT95L?usp=drive_link)
 
